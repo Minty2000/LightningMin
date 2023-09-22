@@ -16,7 +16,7 @@ void setup() {
   size (500, 500);
   strokeWeight(15);
   background(0,0,0);
-  img = loadImage("JeffVer2.0.jpg");
+  img = loadImage("JeffVer2.0.JPG");
 }
 
 void draw() {
