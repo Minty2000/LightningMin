@@ -1,3 +1,4 @@
+PImage img;
 int startX = 250;
 int startY = 500;
 int endX = 250 ;
@@ -8,11 +9,13 @@ int end2X =0;
 int end2Y = 200;
 int half = ((int)(Math.random()*2));
 boolean fact= true;
+int randomNum = (int)(Math.random()*10);
 
 void setup() {
   size (500, 500);
   strokeWeight(15);
   background(0,0,0);
+  img = loadImage("JeffVer2.0.jpg");
 }
 
 void draw() {
@@ -27,6 +30,9 @@ void draw() {
   if (fact == true ){
     
     smile();
+    if (randomNum == 4){
+      image(img,90,90);
+    }
     fact = false;
     }
   }
@@ -50,6 +56,7 @@ void smile(){
     fill(0,255,0);//black
     ellipse(250-50,190,30,60);
     ellipse(250+50,190,30,60);
+    System. out. println(randomNum);
 }
 void topbottom(){
     stroke((int)(Math.random()*256));
@@ -78,4 +85,5 @@ void mousePressed() {
    start2Y = 200;
    end2X =0;
    end2Y = 200;
+   randomNum = (int)(Math.random()*10);
 }
