@@ -13,13 +13,13 @@ int randomNum = (int)(Math.random()*10);
 
 void setup() {
   size (500, 500);
-  strokeWeight(10);
+  strokeWeight(15);
   background(0,0,0);
   img = loadImage("JeffVer2.0.jpg");
 }
 
 void draw() {
-  fill(0,0,0,15);
+  fill(0,0,0,10);
   rect (0,0,500,500);
   
 
@@ -30,7 +30,7 @@ void draw() {
   if (fact == true ){
     
     smile();
-    if (randomNum == 2){
+    if (randomNum == 4){
       image(img,90,90);
     }
     fact = false;
